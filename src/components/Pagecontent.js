@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Pagecontent({good, Setgood, Setbad, bad, Setneutral, neutral}) {
+function Pagecontent({ good, Setgood, Setbad, bad, Setneutral, neutral }) {
 
-    
+
     return (
         <div>
 
@@ -131,29 +131,21 @@ function Pagecontent({good, Setgood, Setbad, bad, Setneutral, neutral}) {
                             </div>
                             {/* <!-- Card Body --> */}
                             <div className="card-body text-center ">
-                                <div className="chart-area">                                    
+                                <div className="chart-area">
                                     <div className='p-5 '>
                                         <div>
-                                        <p className='btn btn-primary m-2 event' onClick={()=>Setgood(good+1)}> Good - Click me </p>
-                                        <p className='btn btn-primary m-2 event' onClick={()=>Setbad(bad+1)}>Bad - Click me</p>
-                                        <p className='btn btn-primary m-2 event' onClick={()=>{Setbad(bad=0); Setgood(good=0)}}>Reset</p>
+                                            <p className='btn btn-primary m-2 event' onClick={() => Setgood(good + 1)}> Good - Click me </p>
+                                            <p className='btn btn-primary m-2 event' onClick={() => Setbad(bad + 1)}>Bad - Click me</p>
+                                            <p className='btn btn-primary m-2 event' onClick={() => { Setbad(bad = 0); Setgood(good = 0) }}>Reset</p>
 
-                                         
+
                                         </div>
-                                        <p className='btn btn-primary m-2 mt-5 event' onClick={()=>Setgood(good+1)}><span > Good : </span>{good} </p>
-                                        <p className='btn btn-primary m-2 mt-5 event' onClick={()=>Setbad(bad+1)}><span >Bad : </span>{bad} </p>
-                                        <p className='btn btn-primary m-2 mt-5 event' onClick={()=>Setbad(bad+1)}><span >Good-percentage : </span>{good!==0?Math.abs((good/(good+bad))*100).toFixed(2)+"%":0+"%"} </p>
+                                        <p className='btn btn-primary m-2 mt-5 event' onClick={() => Setgood(good + 1)}><span > Good : </span>{good} </p>
+                                        <p className='btn btn-primary m-2 mt-5 event' onClick={() => Setbad(bad + 1)}><span >Bad : </span>{bad} </p>
+                                        <p className='btn btn-primary m-2 mt-5 event' onClick={() => Setbad(bad + 1)}><span >Good-percentage : </span>{good !== 0 ? Math.abs((good / (good + bad)) * 100).toFixed(2) + "%" : 0 + "%"} </p>
 
                                     </div>
-                                    {/* <div className='text-center  p-3 '>
-                                        <button className='btn btn-primary' onClick={()=>setIncount(Incount+1)} >Increment</button>
-                                    </div>
-                                    <div className='text-center  p-3 m-3'>
-                                        <button className='btn btn-primary' onClick={()=>setDecount(Decount+1)}>Decrement</button>
-                                    </div>
-                                    <div className='text-center  m-3'>
-                                        <button className='btn btn-primary align-items-center m-4' onClick={Resetall}> Reset  </button>
-                                    </div> */}
+
                                 </div>
                             </div>
                         </div>
