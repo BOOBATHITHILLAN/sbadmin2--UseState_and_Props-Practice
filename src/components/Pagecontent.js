@@ -130,19 +130,22 @@ function Pagecontent({ good, Setgood, Setbad, bad, Setneutral, neutral }) {
                                 </div>
                             </div>
                             {/* <!-- Card Body --> */}
-                            <div className="card-body text-center ">
-                                <div className="chart-area">
-                                    <div className='p-5 '>
-                                        <div>
-                                            <p className='btn btn-primary m-2 event' onClick={() => Setgood(good + 1)}> Good - Click me </p>
-                                            <p className='btn btn-primary m-2 event' onClick={() => Setbad(bad + 1)}>Bad - Click me</p>
-                                            <p className='btn btn-primary m-2 event' onClick={() => { Setbad(bad = 0); Setgood(good = 0) }}>Reset</p>
+                            <div className="card-body text-center">
+                                <div>
+                                    <div className='p-5'>
+                                        <div className='p-3'>
+                                            <p className='btn btn-primary m-2   ' onClick={() => Setgood(good + 1)}> Good - Click me </p>
+                                            <p className='btn btn-primary m-2   ' onClick={() => Setbad(bad + 1)}>Bad - Click me</p>
+                                            <p className='btn btn-primary m-2   ' onClick={() => { Setbad(bad = 0); Setgood(good = 0) }}>Reset</p>
 
+
+                                        </div >
+                                        <div className='p-3'>
+                                            <p className='btn btn-primary m-2 mt-5 ' onClick={() => Setgood(good + 1)}><span > Good : </span>{good} </p>
+                                            <p className='btn btn-primary m-2 mt-5 ' onClick={() => Setbad(bad + 1)}><span >Bad : </span>{bad} </p>
+                                            <p className='btn btn-primary m-2 mt-5 ' onClick={() => Setbad(bad + 1)}><span >Good-percentage : </span>{good !== 0 ? Math.abs((good / (good + bad)) * 100).toFixed(2) + "%" : 0 + "%"} </p>
 
                                         </div>
-                                        <p className='btn btn-primary m-2 mt-5 event' onClick={() => Setgood(good + 1)}><span > Good : </span>{good} </p>
-                                        <p className='btn btn-primary m-2 mt-5 event' onClick={() => Setbad(bad + 1)}><span >Bad : </span>{bad} </p>
-                                        <p className='btn btn-primary m-2 mt-5 event' onClick={() => Setbad(bad + 1)}><span >Good-percentage : </span>{good !== 0 ? Math.abs((good / (good + bad)) * 100).toFixed(2) + "%" : 0 + "%"} </p>
 
                                     </div>
 
@@ -177,7 +180,7 @@ function Pagecontent({ good, Setgood, Setbad, bad, Setneutral, neutral }) {
 
                             {/* <!-- Card Body --> */}
                             <div className="card-body">
-                                <div className="chart-pie pt-4 pb-2 ">
+                                <div className=" pt-4 pb-2 ">
                                     <div className='text-center  p-3 '>
                                         <button className='btn btn-primary' >Whatsapp</button>
                                     </div>

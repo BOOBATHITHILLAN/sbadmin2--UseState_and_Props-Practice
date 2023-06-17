@@ -12,12 +12,12 @@ function Dashboard() {
     const [style, setStyle] = useState("navbar-nav bg-gradient-primary sidebar sidebar-dark accordion");
 
     const [good, Setgood] = useState(0);
- 
+
     const [neutral, Setneutral] = useState(0);
-   
+
     const [bad, Setbad] = useState(0);
 
-   
+
 
     const Changestyle = () => {
         if (style === "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion") {
@@ -37,7 +37,7 @@ function Dashboard() {
 
     return (
         <div id="page-top">
-            
+
             {/* <!-- Page Wrapper --> */}
             <div id="wrapper">
 
@@ -51,7 +51,7 @@ function Dashboard() {
 
                         <Navbar Changestyle1={Changestyle1} />
 
-                        <Pagecontent good={good} Setgood={Setgood} neutral={neutral} Setneutral={Setneutral} bad={bad} Setbad={Setbad}  />
+                        <Pagecontent good={good} Setgood={Setgood} neutral={neutral} Setneutral={Setneutral} bad={bad} Setbad={Setbad} />
 
                     </div>
 

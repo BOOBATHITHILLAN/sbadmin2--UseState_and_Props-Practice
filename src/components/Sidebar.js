@@ -4,7 +4,7 @@ import Navpagecollapse from './Navpagecollapse';
 
 
 
-function Sidebar({style,Changestyle}) {
+function Sidebar({ style, Changestyle }) {
     return (
         <div>
 
@@ -82,8 +82,8 @@ function Sidebar({style,Changestyle}) {
 
             </ul>
             {/* <!-- End of Sidebar --> */}
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Sidebar
